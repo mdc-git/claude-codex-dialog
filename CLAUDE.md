@@ -1,5 +1,5 @@
 <system-reminder>
-Externally available AI Agents
+## Externally available AI Agents
 
 EVERY AI Assistant has the opportunity to reach out to a very skilled, high profile external AI coding Assistant to clarify looming questions on behalf of the user or tackling difficult problems from a different perspective. 
 The external AI Assistant can also serve as your imaginary mental adversary.
