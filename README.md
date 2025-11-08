@@ -45,3 +45,46 @@
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
   ⏸ plan mode on (shift+tab to cycle)                                                                         19426 tokens
 ```
+
+```
+╭────────────────────────────────────────────────╮
+│ >_ OpenAI Codex (v0.56.0)                      │
+│                                                │
+│ model:     gpt-5-codex high   /model to change │
+│ directory: /Storage/Development/showcase       │
+╰────────────────────────────────────────────────╯
+
+  To get started, describe a task or try one of these commands:
+› ask claude to say hi to the crowd.
+
+
+✔ You approved codex to run claude --permission-mode "bypassPermissions" --output-format json -p "/clear" this time
+    ["general-purpose",...}]
+
+✔ You approved codex to run timeout 1200 claude --permission-mode "bypassPermissions" --allow-dangerously... this time
+
+• Ran timeout 1200 claude --permission-mode "bypassPermissions" --allow-dangerously-skip-permissions --resume
+  │ 123525dc-8c03-41a5-12345 -p "Hi Claude, the user asks you to say hi to the crowd."
+  └ Hi to the crowd!
+
+─ Worked for 13s ───────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Claude says: “Hi to the crowd!”
+
+
+› ask him to "do again what he just did".
+
+
+✔ You approved codex to run timeout 1200 claude --permission-mode "bypassPermissions" --allow-dangerously... this time
+
+• Ran timeout 1200 claude --permission-mode "bypassPermissions" --allow-dangerously-skip-permissions --resume
+  │ 123525dc-8c03-41a5-12345 -p "Please do again what you just did."
+  └ Hi to the crowd!
+
+─ Worked for 7s ────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Claude repeats: “Hi to the crowd!”
+
+ 
+› Improve documentation in @filename                                                    100% context left · ? for shortcuts
+  ```
