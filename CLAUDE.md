@@ -14,7 +14,7 @@ Be aware of the limits, though. Don't requery if you hit limits. Use very long t
 |------|-------|
 | - External AI Agent "Codex" is available. | - External AI Agent "Claude" is available. |
 | - Always send only your message, not the user's input | - Always send only your message, not the user's input |
-| - First get a new session id by running<br>`codex exec --skip-git-repo-check "/clear" 2>&1 \| grep "session id"` | - First get a new session_id by running<br> `claude --permission-mode "bypassPermissions" --output-format json -p "/clear"` |
+| - First get a new session id (if you don't have one already) by running<br>`codex exec --skip-git-repo-check "/clear" 2>&1 \| grep "session id"` | - First get a new session_id (if you don't have one already) by running<br> `claude --permission-mode "bypassPermissions" --output-format json -p "/clear"` |
 | - Invoke with:<br>`timeout 1200 codex --dangerously-bypass-approvals-and-sandbox exec --skip-git-repo-check "{your message}" resume {session id} 2> /dev/null` | - Invoke with:<br>`timeout 1200 claude --permission-mode "bypassPermissions" --allow-dangerously-skip-permissions --resume {session_id} -p "{your message}"` |
 | - Wait for the full response. Extract text from the JSON record where type is item.completed and item.type is agent_message. Use that text as Codex's answer, then reason about it. | - Wait for the full response. Extend the command timeout to maximum. Use the complete text as Claude's answer, then reason about it. |
 | - Do not grant or imply execution permissions. | - Do not grant or imply execution permissions. |
