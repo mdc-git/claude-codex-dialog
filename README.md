@@ -2,6 +2,15 @@
 
 ![Claude Pro Sonnet 4.5](https://img.shields.io/badge/Claude%20Pro-Sonnet%204.5-7A1FF2?style=flat-square) ![Codex ChatGPT](https://img.shields.io/badge/Codex%20ChatGPT-GPT--5-74AA9C?style=flat-square)
 
+## Claude: add to CLAUDE.md
+
+https://code.claude.com/docs/en/memory
+
+## Codex: add to AGENTS.md
+
+https://developers.openai.com/codex/guides/agents-md
+
+
 ```
 ╭─── Claude Code v2.0.36 ──────────────────────────────────────────────────────────────────╮
 │                                   │ Tips for getting started                             │
