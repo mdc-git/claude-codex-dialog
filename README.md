@@ -6,11 +6,6 @@
 
 https://code.claude.com/docs/en/memory
 
-## Codex: add to AGENTS.md
-
-https://developers.openai.com/codex/guides/agents-md
-
-
 ```
 ╭─── Claude Code v2.0.36 ──────────────────────────────────────────────────────────────────╮
 │                                   │ Tips for getting started                             │
@@ -56,6 +51,10 @@ https://developers.openai.com/codex/guides/agents-md
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
   ⏸ plan mode on (shift+tab to cycle)                                                                         19426 tokens
 ```
+
+## Codex: add to AGENTS.md
+
+https://developers.openai.com/codex/guides/agents-md
 
 ```
 ╭────────────────────────────────────────────────╮
