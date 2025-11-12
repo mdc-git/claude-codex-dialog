@@ -2,7 +2,7 @@
 
 # Seamless context-aware AI Agent dialogs
 
-## Claude: add to CLAUDE.md
+## Claude: add to ~/.claude/CLAUDE.md
 
 https://code.claude.com/docs/en/memory
 
@@ -52,7 +52,7 @@ https://code.claude.com/docs/en/memory
   ⏸ plan mode on (shift+tab to cycle)                                                                         19426 tokens
 ```
 
-## Codex: add to AGENTS.md
+## Codex: add to ~/.codex/AGENTS.md
 
 https://developers.openai.com/codex/guides/agents-md
 
@@ -97,4 +97,16 @@ https://developers.openai.com/codex/guides/agents-md
 
  
 › Improve documentation in @filename                                                    100% context left · ? for shortcuts
-  ```
+```
+
+## Gemini CLI: add to ~/.gemini/GEMINI.md
+
+Note: The location is seems to be ignored sometimes.
+
+https://codelabs.developers.google.com/gemini-cli-hands-on#9
+
+## GitHub Copilot CLI: add to ~/.copilot/AGENTS.md
+
+Note: The location is seems to be ignored sometimes.
+
+https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli#use-custom-instructions
