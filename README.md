@@ -101,7 +101,7 @@ https://developers.openai.com/codex/guides/agents-md
 
 ## Gemini CLI: add to ~/.gemini/GEMINI.md
 
-**Note**: The location of the instructions file seems to be ignored sometimes (even though `/memory show` shows contents). Gemini dos not yet support session_ids in non-interactive mode. In other words: Gemini does not retain context and treats every query as fresh.
+**Note**: The location of the instructions file seems to be ignored sometimes (even though `/memory show` shows contents). Gemini does not yet support session_ids in non-interactive mode. In other words: Gemini does not retain context and treats every query as fresh.
 
 https://codelabs.developers.google.com/gemini-cli-hands-on#9
 
