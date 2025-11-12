@@ -101,7 +101,7 @@ https://developers.openai.com/codex/guides/agents-md
 
 ## Gemini CLI: add to ~/.gemini/GEMINI.md
 
-Note: The location of the instructions file seems to be ignored sometimes (even though `/memory show` shows contents). Gemini dos not yet support session_ids in non-interactive mode.
+**Note**: The location of the instructions file seems to be ignored sometimes (even though `/memory show` shows contents). Gemini dos not yet support session_ids in non-interactive mode. In other words: Gemini does not retain context and treats every query as fresh.
 
 https://codelabs.developers.google.com/gemini-cli-hands-on#9
 
@@ -179,6 +179,61 @@ Tips for getting started:
 
 ## GitHub Copilot CLI: add to ~/.copilot/AGENTS.md
 
-Note: The location of the instructions file seems to be ignored sometimes. Copilot only allows `--continue` to reuse the session. `--resume` is supported but there is no way to get a session_id in non-interactive mode.
+**Note**: The location of the instructions file seems to be ignored sometimes. Copilot only allows `--continue` to reuse the session. `--resume` is supported but there is currently no way to get a session_id in non-interactive mode.
 
 https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli#use-custom-instructions
+
+**Context amnesia demo with Gemini CLI:**
+
+```
+ ● Logged in as user: mdc-git
+
+ ● Connected to GitHub MCP Server
+
+ > ask gemini whats up
+
+ ● I'll reach out to Gemini CLI to ask what's up.
+
+   Ask Gemini what's up
+   $ timeout 1200 $(which gemini) -y -p "Hey Gemini, what's up?" 2> 
+   /dev/null
+   ↪ 2 lines...
+
+ ● Gemini responded: "Hello! I'm ready to assist you. What can I 
+   help you with
+   today?"
+
+ > ask gemini "what did we just ask you"
+
+ ● I'll ask Gemini what we just asked.
+
+   Ask Gemini what we just asked
+   $ timeout 1200 $(which gemini) -y -p "what did we just ask you" 
+   2> /dev/null
+   ↪ 7 lines...
+
+ ● Gemini doesn't remember our previous question "Hey Gemini, 
+   what's up?" - each
+   invocation starts fresh without memory of prior exchanges. 
+   Gemini only sees its
+   own initial setup context, not our conversation history.
+
+ > what did it respond
+
+ ● Gemini responded that it was given information about the 
+   Gemini CLI setup (date,
+   OS, working directory, folder structure) and that its setup is
+    complete, waiting
+   for the first command. 
+
+   It doesn't have memory of our previous "what's up" question - 
+   each Gemini
+   invocation starts with a fresh context.
+
+
+ /Storage/Development/showcase            claude-sonnet-4.5 (1x)
+ ────────────────────────────────────────────────────────────────
+ >  Enter @ to mention files or / for commands
+ ────────────────────────────────────────────────────────────────
+ Ctrl+c Exit · Ctrl+r Expand recent        Remaining requests: 0%
+ ```
