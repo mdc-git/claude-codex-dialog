@@ -1,6 +1,6 @@
 ![Claude Pro Sonnet 4.5](https://img.shields.io/badge/Claude%20Pro-Sonnet%204.5-7A1FF2?style=flat-square) ![Codex ChatGPT](https://img.shields.io/badge/Codex%20ChatGPT-GPT--5-74AA9C?style=flat-square) ![Google Gemini](https://img.shields.io/badge/Google-Gemini-yellow?style=flat-square) ![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-00f?logo=githubcopilot&labelColor=666&style=flat-square&logoColor=000)
 
-# Seamless context-aware AI Agent dialogs
+# Seamless context-aware AI Agent conversations
 
 ## Claude Code: add to ~/.claude/CLAUDE.md
 
