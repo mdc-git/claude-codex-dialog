@@ -101,12 +101,84 @@ https://developers.openai.com/codex/guides/agents-md
 
 ## Gemini CLI: add to ~/.gemini/GEMINI.md
 
-Note: The location is seems to be ignored sometimes.
+Note: The location of the instructions file seems to be ignored sometimes (even though `/memory show` shows contents). Gemini dos not yet support session_ids in non-interactive mode.
 
 https://codelabs.developers.google.com/gemini-cli-hands-on#9
 
+```
+
+ ███         █████████ 
+░░░███      ███░░░░░███
+  ░░░███   ███     ░░░ 
+    ░░░███░███         
+     ███░ ░███    █████
+   ███░   ░░███  ░░███ 
+ ███░      ░░█████████ 
+░░░         ░░░░░░░░░  
+
+Tips for getting started:
+1. Ask questions, edit files, or run commands.
+2. Be specific for the best results.
+3. /help for more information.
+
+> ask copilot whats up
+
+╭─────────────────────────────────────────────────╮
+│ ✓  Shell copilot --allow-all-paths --allow-all… │
+│                                                 │
+│    ✓ Read ~/.copilot/AGENTS.md (111 lines)      │
+│                                                 │
+│                                                 │
+│                                                 │
+│    OK                                           │
+╰─────────────────────────────────────────────────╯
+╭─────────────────────────────────────────────────╮
+│ ✓  Shell copilot --allow-all-tools --allow-all… │
+│                                                 │
+│    Nothing much, just ready to help with your   │
+│    cod                                          │
+│    ing tasks. What do you need?                 │
+╰─────────────────────────────────────────────────╯
+✦ Nothing much, just ready to help with your coding
+  tasks. What do you need?
+
+> Ask copilot "what we just asked him to do"
+
+╭─────────────────────────────────────────────────╮
+│ ✓  Shell copilot --allow-all-tools --allow-all… │
+│                                                 │
+│    You asked me to read the AGENTS.md file and  │
+│    re                                           │
+│    spond with 'OK'. That file contains          │
+│    instructio                                   │
+│    ns for AI assistants on how to work          │
+│    together,                                    │
+│    including how I (GitHub Copilot CLI) can be  │
+│    in                                           │
+│    voked by other AI agents as an external      │
+│    assist                                       │
+│    ant for clarification or tackling problems   │
+│    fro                                          │
+│    m a different perspective.                   │
+╰─────────────────────────────────────────────────╯
+✦ You asked me to read the AGENTS.md file and respod
+  with 'OK'. That file contains instructions for AI
+  assistants on how to work together, including howI
+  (GitHub Copilot CLI) can be invoked by other AI
+  agents as an external assistant for clarification
+  or tackling problems from a different perspective.
+
+ Using:
+   - 1 GEMINI.md file
+
+╭─────────────────────────────────────────────────╮
+│ >   Type your message or @path/to/file          │
+╰─────────────────────────────────────────────────╯
+ /Sto.../.../showcase       no sandbox        auto
+```
+
 ## GitHub Copilot CLI: add to ~/.copilot/AGENTS.md
 
-Note: The location is seems to be ignored sometimes.
+Note: The location of the instructions file seems to be ignored sometimes. Copilot only allows `--continue` to reuse the session. `--resume` is supported but there is no way to get a session_id in non-interactive mode.
 
 https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli#use-custom-instructions
