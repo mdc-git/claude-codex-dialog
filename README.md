@@ -2,7 +2,7 @@
 
 # Seamless context-aware AI Agent dialogs
 
-## Claude: add to ~/.claude/CLAUDE.md
+## Claude Code: add to ~/.claude/CLAUDE.md
 
 https://code.claude.com/docs/en/memory
 
@@ -52,7 +52,7 @@ https://code.claude.com/docs/en/memory
   ⏸ plan mode on (shift+tab to cycle)                                                                         19426 tokens
 ```
 
-## Codex: add to ~/.codex/AGENTS.md
+## Codex CLI: add to ~/.codex/AGENTS.md
 
 https://developers.openai.com/codex/guides/agents-md
 
