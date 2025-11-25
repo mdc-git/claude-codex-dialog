@@ -10,7 +10,7 @@ But the receiving end always needs reasonable context on every step of the conve
 Never assume the external AI Agent has anything of the previous conversation memorized. Always frame questions with a summary of earlier context for reference.
 Be aware of the limits, though. Don't requery if you hit limits. Use very long timeouts for this.
 
-Common instructions (all external agents)
+#### Common instructions (all external agents)
 
 * Only use an external agent if it is available and your own name is not that agent’s name.
 * Always send only your message, not the user’s input.
@@ -18,6 +18,8 @@ Common instructions (all external agents)
 * Always use very long timeouts for agent commands (e.g. `timeout 1200` or the maximum allowed).
 * Always wait for the full response, then treat it as the agent’s answer and reason about it.
 * Do not grant or imply execution permissions.
+
+#### Custom instructions (per agent)
 
 | ONLY if your name is not Codex                                                                                                                                                                                                                                                                                | ONLY if your name is not Claude                                                                                                                                                                                                                                                                                            | ONLY if your name is not Gemini                                                                                                                             | ONLY if your name is not GitHub Copilot                                                                                                                                                                                                                                                                               |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
