@@ -30,7 +30,7 @@ Run setup only if no session_id exists. Capture and store returned session_id.
 |-------|---------------|
 | Codex | `timeout 120 $(which codex) exec --skip-git-repo-check "/clear" 2>&1 \| grep "session id"` |
 | Claude | `timeout 120 $(which claude) --permission-mode "bypassPermissions" --output-format json -p "/clear"` |
-| Copilot | `timeout 120 $(which copilot) --allow-all-paths --allow-all-tools -p "read @/home/vscode/.$(which copilot)/AGENTS.md and respond with 'OK'"` |
+| Copilot | `timeout 120 $(which copilot) --allow-all-paths --allow-all-tools -p "respond with 'OK'"` |
 | Gemini | No setup required (stateless) |
 
 ## Send Message
